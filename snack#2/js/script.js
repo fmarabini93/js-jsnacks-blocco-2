@@ -4,27 +4,27 @@ function getRndNum(min, max) {
 
 var teams = [
     {
-        name: "whites",
+        name: "Whites",
         p: 0,
         f: 0
     },
     {
-        name: "black",
+        name: "Blacks",
         p: 0,
         f: 0
     },
     {
-        name: "greens",
+        name: "Greens",
         p: 0,
         f: 0
     },
     {
-        name: "reds",
+        name: "Reds",
         p: 0,
         f: 0
     },
     {
-        name: "blues",
+        name: "Blues",
         p: 0,
         f: 0
     }
@@ -39,4 +39,10 @@ for (var i = 0; i < teams.length; i++) {
 
 }
 
-console.log(nameFouls);
+var chart = document.getElementById("teams");
+
+for (var k = 0; k < nameFouls.length; k++) {
+
+    chart.innerHTML += "<li>" + nameFouls[k] + "</li>";
+
+}
