@@ -37,3 +37,5 @@ for (var i = 0; i < (bikes.length - 1); i++) {
 }
 
 console.log(minWeight);
+document.getElementById("name").innerHTML = minWeight.name;
+document.getElementById("weight").innerHTML = minWeight.weight + " kgs";
