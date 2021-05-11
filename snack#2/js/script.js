@@ -35,7 +35,7 @@ for (var i = 0; i < teams.length; i++) {
 
     teams[i].p = getRndNum(1, 100);
     teams[i].f = getRndNum(1, 100);
-    nameFouls.push(teams[i].name, teams[i].f);
+    nameFouls.push({name: teams[i].name, f: teams[i].f});
 
 }
 
@@ -43,6 +43,6 @@ var chart = document.getElementById("teams");
 
 for (var k = 0; k < nameFouls.length; k++) {
 
-    chart.innerHTML += "<li>" + nameFouls[k] + "</li>";
+    chart.innerHTML += "<li>" + nameFouls[k].name + " " + nameFouls[k].f + "</li>";
 
 }
