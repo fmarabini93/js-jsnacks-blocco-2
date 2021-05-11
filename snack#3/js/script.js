@@ -1,7 +1,5 @@
 function numBetween(array, var1, var2) {
 
-    var array = [];
-
     for (var i = (var1 + 1); i < var2; i++) {
 
         array.push(i);
