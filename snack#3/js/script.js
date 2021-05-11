@@ -42,10 +42,12 @@ var numbersBetween = document.getElementById("numbers-between");
 
 choosenNumbers.innerHTML = "You chose " + num1 + " and " + num2 + ". Between them there are " + numBet.length + " numbers.";
 
+checkNumbers.classList.add("visible");
+
 checkNumbers.addEventListener("click", function() {
 
     choosenNumbers.classList.add("hidden");
-    checkNumbers.classList.add("hidden");
+    checkNumbers.classList.remove("visible");
     numbersBetween.classList.add("visible");
     for (var k = 0; k < numBet.length; k++) {
         
