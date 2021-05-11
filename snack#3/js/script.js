@@ -36,4 +36,21 @@ if (num1 > num2) {
 
 }
 
-console.log(numBet);
+var choosenNumbers = document.getElementById("choosen-numbers");
+var checkNumbers = document.getElementById("check-numbers");
+var numbersBetween = document.getElementById("numbers-between");
+
+choosenNumbers.innerHTML = "You chose " + num1 + " and " + num2 + ". Between them there are " + numBet.length + " numbers.";
+
+checkNumbers.addEventListener("click", function() {
+
+    choosenNumbers.classList.add("hidden");
+    checkNumbers.classList.add("hidden");
+    numbersBetween.classList.add("visible");
+    for (var k = 0; k < numBet.length; k++) {
+        
+        numbersBetween.innerHTML += "<li>" + numBet[k] + "</li>";
+    
+    }
+
+});

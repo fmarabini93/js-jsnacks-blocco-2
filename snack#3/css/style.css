@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Fascinate', cursive;
+    font-size: 3em;
+    color: #ffffff;
+    background-image: linear-gradient(to top right, #033358, #008793);
+}
+
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}
+
+ul {
+    min-height: 100vh;
+    list-style: none;
+}
+ul li {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+@keyframes mybtn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Fascinate', cursive;
+    font-size: 1em;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    animation: mybtn 1.5s linear infinite;
+}
